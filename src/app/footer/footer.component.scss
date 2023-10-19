@@ -1,0 +1,21 @@
+@import "../../globals.scss";
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  min-height: $footer-height;
+  background-color: #333333;
+
+  #logo {
+    height: calc($footer-height / 2);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  p {
+    color: #ffffff;
+    text-align: center;
+  }
+}

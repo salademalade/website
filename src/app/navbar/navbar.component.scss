@@ -1,0 +1,71 @@
+@import "../../globals.scss";
+
+$navbar-color: #2cbd0f;
+$navbar-color-hover: #2db200;
+$navbar-color-active: #208000;
+
+#navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $navbar-height;
+  background-color: $navbar-color;
+
+  .navbar {
+    height: $navbar-height;
+    padding: 0;
+
+    #navbar-supported-content {
+      top: 0;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          float: left;
+
+          a {
+            display: block;
+            padding: 8px;
+            background-color: $navbar-color;
+            color: #ffffff;
+            text-decoration: none;
+
+            &:hover {
+              background-color: $navbar-color-hover;
+            }
+
+            &.active {
+              background-color: $navbar-color-active;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        fa-icon {
+          color: #ffffff;
+        }
+      }
+
+      #navbar-supported-content {
+        position: absolute;
+        top: $navbar-height;
+        z-index: 1;
+
+        li {
+          width: 100vw;
+        }
+      }
+    }
+  }
+}
