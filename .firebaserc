@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "swjsite": {
+      "hosting": {
+        "website": [
+          "swjsite"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "swjsite"
+  }
+}
